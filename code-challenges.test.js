@@ -87,12 +87,32 @@ const moduloThree = (arr) => {
 // --------------------3) Create a function that takes in an array of numbers and returns the sum of all the numbers cubed.
 
 // a) Create a test with an expect statement using the variables provided.
+describe("cubedSum", () => {
+  var cubeAndSum1 = [2, 3, 4]
+  // Expected output: 99
+  var cubeAndSum2 = [0, 5, 10]
+  // Expected output: 1125
+  it(" takes in an array of numbers and returns the sum of all the numbers cubed", () => {
+    expect(cubedSum(cubeAndSum1)).toEqual(99)
+    expect(cubedSum(cubeAndSum2)).toEqual(1125)
 
-var cubeAndSum1 = [2, 3, 4]
-// Expected output: 99
-var cubeAndSum2 = [0, 5, 10]
-// Expected output: 1125
+  })
+})
+
 
 
 
 // b) Create the function that makes the test pass.
+//create a function that takes an array
+const cubedSum = (arr) => {
+  //assign an variable = to zero for summing values in the array
+  var sum = 0
+  //iterate through the array
+  for(var i = 0; i < arr.length; i++){
+    //add each value cubed to the sum count, as it iterated through the array
+   sum = sum + arr[i] ** 3
+    
+  }
+  //return the sum of all the numbers cubed
+return sum
+}
