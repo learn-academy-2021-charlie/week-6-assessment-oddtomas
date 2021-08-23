@@ -36,7 +36,7 @@ method="GET" /students/new The new method which a create and read action display
 
 method="GET" /students/2 The show method which is a read action, shows one item in the associated model referencing the specific id of the instance.
 
-method="GET" /students/edit/2 The edit method makes an edit form on an existing item referencing that items id.
+method="GET" /students/2/edit The edit method makes an edit form on an existing item referencing that items id.
 
 method="PATCH" /students/2 The update method is a update action that performs the actual modification to the database from the edit form, referencing that items specific id.
 
@@ -46,11 +46,11 @@ method="DELETE" /students/2 The destroy method is a delete action that removes i
 
 1. As a developer I make a rails app to manage my to do list
 1. As a developer my app has a List model that has the attributes of title and content
-1. As a developer I can see a page with all my tasks
-1. As a developer I can see individual tasks
-1. As a developer I can add new tasks
-1. As a developer I can update my tasks
-1. As a developer I can delete the task I have completed
-1. As a developer I can make multiple types of lists that have many tasks
-1. As a developer each list should have it's own page or container
-1. As a developer each individual task page should have a way to get back to all of the tasks in that list
+1. As a user I can see a page with all my tasks
+1. As a user I can see individual tasks
+1. As a user I can add new tasks
+1. As a user I can update my tasks
+1. As a user I can delete the task I have completed
+1. As a user I can make multiple types of lists that have many tasks
+1. As a user I can see each list on it's own page or container
+1. As a user each individual task page should have a way to get back to all of the tasks in that list
